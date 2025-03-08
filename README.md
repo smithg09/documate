@@ -15,16 +15,20 @@ An AI chatbot agent that "ingests" documents, stores embeddings in a vector data
 ## Local Development
 
 1. Install packages
+
 ```sh
-  yarn
-```
-2. Create `.env.local` with supabase creds & name of embedding
-3. Start the server
-```sh
-  npx nx serve platform
+yarn
 ```
 
-If you want to build the application execute: 
+2. Create `.env.local` with supabase creds & name of embedding
+3. Start the server
+
 ```sh
-  npx nx build platform
+npx nx serve platform
+```
+
+If you want to build the application execute:
+
+```sh
+npx nx build platform
 ```
