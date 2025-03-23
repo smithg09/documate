@@ -14,8 +14,8 @@ const createSupabaseRetriever = (
   }
 
   const embeddings = new OllamaEmbeddings({
-    model: process.env["EMBEDDING_MODEL"], // Default value
-    baseUrl: "http://localhost:11434", // Default value
+    model: process.env["EMBEDDING_MODEL"],
+    baseUrl: process.env["EMBEDDING_BASE_URL"],
   });
 
   const supabaseClient = createClient(

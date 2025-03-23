@@ -52,10 +52,10 @@ export async function loadChatModel(
     ) {
       throw new Error(`Unsupported provider: ${provider}`);
     }
-    return await initChatModel('deepseek-r1:1.5b', {
-      modelProvider: 'ollama',
+    return await initChatModel(process.env['CHAT_MODEL'], {
+      modelProvider: process.env['MODEL_PROVIDER'],
       max_tokens: 1000,
-      base_url: 'http://localhost:11434',
+      base_url: process.env['MODEL_BASE_URL'],
       temperature: temperature,
     });
   }

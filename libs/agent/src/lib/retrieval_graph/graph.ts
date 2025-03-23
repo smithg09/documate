@@ -36,10 +36,7 @@ async function checkQueryType(
 
   const response = await model.withStructuredOutput(schema).invoke(formattedPrompt.toString());
 
-
-  const route = response.route;
-
-  return { route };
+  return { route: response.route };
 }
 
 async function answerQueryDirectly(
