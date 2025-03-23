@@ -1,5 +1,4 @@
 # AI Document Chatbot & Agent Powered by LangChain and LangGraph
-
 An AI chatbot agent that "ingests" documents, stores embeddings in a vector database (Supabase), and then answers user queries using LLM provider (Ollama) utilising LangChain and LangGraph as orchestration frameworks. Built on Nx monorepo
 
 ## Features
@@ -10,6 +9,9 @@ An AI chatbot agent that "ingests" documents, stores embeddings in a vector data
 * [X] **LangGraph Integration**: Built using LangGraph’s state machine approach to orchestrate ingestion and retrieval, visualise your agentic workflow, and debug each step of the graph.
 * [X] **Frontend**: Allow file uploads and real-time chat.
 
+<p align="center">
+  <img width="400" alt="image" src="https://github.com/user-attachments/assets/d5c37867-28e7-4ffe-8948-f0e6415606f5" />
+</p>
 ---
 
 ## Local Development
