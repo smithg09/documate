@@ -8,23 +8,26 @@ An AI chatbot agent that "ingests" documents, stores embeddings in a vector data
 * [X] **Retrieval Graph**: Handle user questions, decide whether to retrieve documents or give a direct answer, then generate concise responses with references to the retrieved documents.
 * [X] **Streaming Responses**: Real-time streaming of partial responses from the server to the client UI.
 * [X] **LangGraph Integration**: Built using LangGraph’s state machine approach to orchestrate ingestion and retrieval, visualise your agentic workflow, and debug each step of the graph.
-* [ ] **Frontend**: Allow file uploads and real-time chat.
+* [X] **Frontend**: Allow file uploads and real-time chat.
 
 ---
 
 ## Local Development
 
 1. Install packages
-
 ```sh
 yarn
 ```
 
 2. Create `.env.local` with supabase creds & name of embedding
 3. Start the server
-
 ```sh
 npx nx serve platform
+```
+
+4. Start application UI
+```sh
+npx nx dev platform-ui
 ```
 
 If you want to build the application execute:

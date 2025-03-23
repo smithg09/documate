@@ -1,0 +1,9 @@
+{
+  "name": "platform-ui",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "apps/platform-ui",
+  "projectType": "application",
+  "tags": [],
+  "// targets": "to see all targets run: nx show project platform-ui --web",
+  "targets": {}
+}
